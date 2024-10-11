@@ -19,14 +19,23 @@ Sequential  Search  adalah  teknik  pencarian  data  dimana  data  dicari  secar
 
 Binary  Search  adalah algoritma  pencarian  yanglebih efisien  daripada  Sequential  Search.  Hal  tersebut  dikarenakan algoritma  ini  tidak  perlu  menjelajahi  setiap  elemen  dari  tabel. Kerugiannya  adalah  algoritma  ini  hanya  bisa  digunakan  pada tabel  yang  elemennya  sudah  terurut  baik  menaik  maupun menurun. Pada  intinya,  algoritma  ini  menggunakan  prinsip divide   and   conquer, dimana   sebuah   masalah   atau   tujuan diselesaikan  dengan  cara  mempartisi  masalahmenjadi  bagian yang lebih kecil. Algoritma ini membagi sebuah tabel menjadi duadan  memproses  satu  bagian  dari  tabel  itu  saja.  Algoritma ini bekerja  dengan caramemilih record dengan indeks tengah dari tabel dan membandingkannya denganrecord yang hendak dicari.  Jika  record  tersebut  lebih  rendah  atau  lebih  tinggi,maka   tabel   tersebut   dibagi   dua   dan   bagian   tabel   yang bersesuaian akan diproseskembali.Prinsip pencarian biner dapat dijelaskan sebagai berikut :Misalkan indeks kiri adalah i dan indeks kanan adalah j. Pada mulanya, melakukan inisialisasi i dengan 1 dan j dengan n.
 
-1. Bagi dua elemen larik pada elemen tengah. Elemen tengah adalah elemendengan indeks k = (i + j) div. <br>
-2. ( Elemen tengah L[K], membagi larik menjadi dua bagian yaitu bagian kiri L[i..j] dan bagian kanan L[k+1..j]) 2. Periksa apakah L[K] = x, jika L[K] = x maka pencarian selesai sebab x sudah ditemukan. Tetapi jika L[K] ≠ x, harus ditentukan apakah pencarian akan dilakukan di larik bagian kiri atau dilarik bagian kanan. Jika L[K] < x, maka pencarian dilakukan lagi pada larik bagian kiri.
-
 ## Pseudocode adalah...
 
 Pseudocodeadalah Pseudocodeadalah  kode  atau tanda   yang   menyerupai   (pseudo)   atau   penjelasan   cara menyelesaikan suatu masalah. Pseudocodesering digunakan untuk   menuliskan   algoritma   dari   suatu   permasalahan. Pseudocodeberisikan langkah-langkah untuk menyelesaikan suatu  permasalahan  dan  hampir  sama  dengan  algoritma, hanya   saja   bentuknya   sedikit   berbeda   dari   algoritma. Pseudocodemenggunakan  bahasa  yang  hampir  menyerupai bahasa   pemrograman.   Selain   itu   biasanya Pseudocodemenggunakan bahasa yang mudah dipahami secara universal dan juga lebih ringkas dari pada algoritma.
 
 ## Big O algoritma
+Big O notation adalah cara untuk menggambarkan efisiensi atau kompleksitas waktu dari sebuah algoritma, terutama saat ukuran input meningkat. Ini membantu kita memahami bagaimana performa algoritma berubah seiring bertambahnya jumlah data yang diproses.
+Beberapa kompleksitas Big O yang umum:
+
+- O(1) - Waktu konstan: Algoritma selalu mengambil waktu yang sama, terlepas dari ukuran input.
+- O(log n) - Logaritmik: Waktu eksekusi meningkat secara logaritmik dengan ukuran input. Contoh: binary search.
+- O(n) - Linear: Waktu eksekusi meningkat secara linear dengan ukuran input. Contoh: mencari elemen dalam array tidak terurut.
+- O(n log n) - Linearithmik: Sedikit lebih buruk dari linear. Contoh: algoritma pengurutan efisien seperti mergesort.
+- O(n^2) - Kuadratik: Waktu eksekusi meningkat secara kuadrat dengan ukuran input. Contoh: nested loops sederhana.
+- O(2^n) - Eksponensial: Waktu eksekusi meningkat secara eksponensial dengan ukuran input. Contoh: solusi rekursif untuk masalah traveling salesman.
+
+
+
 
 ## Hitung Big O dari Algoritma Sequantial Search
 
