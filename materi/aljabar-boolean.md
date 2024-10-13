@@ -7,15 +7,20 @@ Aljabar   Boolean   adalah   aljabar   yang terdiri atas suatu himpunan   (palin
  $$ A . B = F (2)$$
  $$  \overline{\rm A} = F (3)$$
 
-Aljabar Boolean sangat penting perannya
-di  dalam  proses  perancangan  maupun  analisis
-rangkaian  logika,  karena merupakan  aljabar yang  diberlakukan  pada  variabel  yang  bersifat
-diskrit.
+Aljabar Boolean sangat penting perannya di dalam proses perancangan maupun analisis
+rangkaian logika, karena merupakan aljabar yang  diberlakukan  pada  variabel yang bersifat diskrit.
 
 <b>Teorema Variabel Jamak</b>
 
-Teorema-teorema  variabel  jamak  aljabar
-Boolean   umumnya  sama  dengan teorema - teorema  pada  aljabar  biasa , seperti  (Muchlas,2005).
+Teorema-teorema  variabel  jamak aljabar Boolean   umumnya sama dengan teorema - teorema pada aljabar  biasa , seperti (Muchlas,2005).
+
+a. Komutatif
+
+ $$ A + B =  B + A$$
+ $$ A . B =  B . A$$
+
+b, Asosiatif
+
 
 ### Definisi gerbang logika
 Gerbang logika dasar merupakan elemen rangkaian digital dan rangkaian digital merupakan kesatuan dari gerbang gerbang logika dasar yang membentuk fungsi pemrosesan sinyal digital (Muchlas, 2005). 
@@ -34,7 +39,7 @@ masukannya berlogika satu. Selain itu saluran keluarannya akan berlogika nol
 pada saluran masukannya berlogika satu
 maka saluran keluarannya akan berlogika nol.
 
+
 ### Refrensi :
 1. https://ejournal3.undip.ac.id/index.php/bfd/article/view/10631/10316 (Definisi gerbang logika dan aljabar boolean)
-2. 
 
