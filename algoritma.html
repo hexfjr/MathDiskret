@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Content with notebooks &#8212; My sample book</title>
+    <title>Algoritma &#8212; My sample book</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'algoritma';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="HIMPUNAN" href="materiHimpunan.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,8 +124,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -181,8 +179,8 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="algoritma.html">Algoritma</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materiHimpunan.html">HIMPUNAN</a></li>
 </ul>
 
@@ -255,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Falgoritma.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -285,7 +283,7 @@
       
       
       
-      <li><a href="_sources/notebooks.ipynb" target="_blank"
+      <li><a href="_sources/algoritma.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -295,7 +293,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -369,7 +367,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Content with notebooks</h1>
+    <h1>Algoritma</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -379,9 +377,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-sequential-search">Algoritma Sequential Search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode-adalah">Pseudocode adalah…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algoritma-sequantial-search">Hitung Big O dari Algoritma Sequantial Search</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refrensi">Refrensi:</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -393,90 +399,60 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
-
-<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
-<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
-
-
-<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
-<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">.5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/a31e63b1f6ca34376ef17d2b6c277648c6b47bb0a75c5165999735167a988593.png" src="_images/a31e63b1f6ca34376ef17d2b6c277648c6b47bb0a75c5165999735167a988593.png" />
-</div>
-</div>
-<p>There is a lot more that you can do with outputs (such as including interactive outputs)
-with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
-<section class="tex2jax_ignore mathjax_ignore" id="content-with-notebooks">
-<h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Link to this heading">#</a></h1>
-<p>You can also create content with Jupyter Notebooks. This means that you can include
-code blocks and their outputs in your book.</p>
-<section id="markdown-notebooks">
-<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Link to this heading">#</a></h2>
-<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
-<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
-<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-math^{blocks}
-\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
-\end{split}\]</div>
-<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="algoritma">
+<h1>Algoritma<a class="headerlink" href="#algoritma" title="Link to this heading">#</a></h1>
+<section id="definisi-algoritma">
+<h2>Definisi Algoritma<a class="headerlink" href="#definisi-algoritma" title="Link to this heading">#</a></h2>
+<p>Algoritma adalah Runtutan pengambilan putusan secara logis
+untuk pemecahan masalah.</p>
+<p>Algoritma atau dengan kata lain Logic, merupakan komponen dasar dalam pembuatan
+sebuah Aplikasi Program. Ciri - ciri algoritma yang baik meliputi:
+Input, Output, Definite, Efective
+dan Terminate.
+Maksudnya adalah sebuah Algoritma harus memiliki Masukan dan Hasil, Juga memiliki  kejelasan  apa  yang  dilakukan,  serta  langkah  penyelesaian  yang efektif  dan  langkah tersebut  dapat  berhenti  atau  dapat  diberhentikan  secara  jelas.</p>
+<section id="algoritma-sequential-search">
+<h3>Algoritma Sequential Search<a class="headerlink" href="#algoritma-sequential-search" title="Link to this heading">#</a></h3>
+<p>Sequential  Search  adalah  teknik  pencarian  data  dimana  data  dicari  secara  urut dari depan  ke belakang  atau  dari  awal  sampai  akhir.  Berdasarkan  key  yang  dicari  Kelebihan  dari  proses  pencarian secara  sequential ini jika data  yang dicari terletak didepan , maka data  akan ditemukan dengan cepat. Tetapi  dibalik  kelebihannya  ini,  teknikini  juga  memiliki  kekurangan  jika  data  yang  dicari  terletak dibelakang  atau  paling  akhir,  maka  akan  membutuhkan  waktu  yang  lama  dalam  proses  pencariannya dan juga beban komputer akan semakin bertambah jika jumlah data dalam array sangat banyak.</p>
 </section>
-<section id="myst-markdown">
-<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
-out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
-or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
+<section id="algoritma-binary-search">
+<h3>Algoritma Binary Search<a class="headerlink" href="#algoritma-binary-search" title="Link to this heading">#</a></h3>
+<p>Binary  Search  adalah algoritma  pencarian  yanglebih efisien  daripada  Sequential  Search.  Hal  tersebut  dikarenakan algoritma  ini  tidak  perlu  menjelajahi  setiap  elemen  dari  tabel. Kerugiannya  adalah  algoritma  ini  hanya  bisa  digunakan  pada tabel  yang  elemennya  sudah  terurut  baik  menaik  maupun menurun. Pada  intinya,  algoritma  ini  menggunakan  prinsip divide   and   conquer, dimana   sebuah   masalah   atau   tujuan diselesaikan  dengan  cara  mempartisi  masalahmenjadi  bagian yang lebih kecil. Algoritma ini membagi sebuah tabel menjadi duadan  memproses  satu  bagian  dari  tabel  itu  saja.  Algoritma ini bekerja  dengan caramemilih record dengan indeks tengah dari tabel dan membandingkannya denganrecord yang hendak dicari.  Jika  record  tersebut  lebih  rendah  atau  lebih  tinggi,maka   tabel   tersebut   dibagi   dua   dan   bagian   tabel   yang bersesuaian akan diproseskembali.Prinsip pencarian biner dapat dijelaskan sebagai berikut :Misalkan indeks kiri adalah i dan indeks kanan adalah j. Pada mulanya, melakukan inisialisasi i dengan 1 dan j dengan n.</p>
 </section>
-<section id="code-blocks-and-outputs">
-<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Link to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
+</section>
+<section id="pseudocode-adalah">
+<h2>Pseudocode adalah…<a class="headerlink" href="#pseudocode-adalah" title="Link to this heading">#</a></h2>
+<p>Pseudocodeadalah Pseudocodeadalah  kode  atau tanda   yang   menyerupai   (pseudo)   atau   penjelasan   cara menyelesaikan suatu masalah. Pseudocodesering digunakan untuk   menuliskan   algoritma   dari   suatu   permasalahan. Pseudocodeberisikan langkah-langkah untuk menyelesaikan suatu  permasalahan  dan  hampir  sama  dengan  algoritma, hanya   saja   bentuknya   sedikit   berbeda   dari   algoritma. Pseudocodemenggunakan  bahasa  yang  hampir  menyerupai bahasa   pemrograman.   Selain   itu   biasanya Pseudocodemenggunakan bahasa yang mudah dipahami secara universal dan juga lebih ringkas dari pada algoritma.</p>
+</section>
+<section id="big-o-algoritma">
+<h2>Big O algoritma<a class="headerlink" href="#big-o-algoritma" title="Link to this heading">#</a></h2>
+<p>Big O notation adalah cara untuk menggambarkan efisiensi atau kompleksitas waktu dari sebuah algoritma, terutama saat ukuran input meningkat. Ini membantu kita memahami bagaimana performa algoritma berubah seiring bertambahnya jumlah data yang diproses.
+Beberapa kompleksitas Big O yang umum:</p>
+<ul class="simple">
+<li><p>O(1) - Waktu konstan: Algoritma selalu mengambil waktu yang sama, terlepas dari ukuran input.</p></li>
+<li><p>O(log n) - Logaritmik: Waktu eksekusi meningkat secara logaritmik dengan ukuran input. Contoh: binary search.</p></li>
+<li><p>O(n) - Linear: Waktu eksekusi meningkat secara linear dengan ukuran input. Contoh: mencari elemen dalam array tidak terurut.</p></li>
+<li><p>O(n log n) - Linearithmik: Sedikit lebih buruk dari linear. Contoh: algoritma pengurutan efisien seperti mergesort.</p></li>
+<li><p>O(n^2) - Kuadratik: Waktu eksekusi meningkat secara kuadrat dengan ukuran input. Contoh: nested loops sederhana.</p></li>
+<li><p>O(2^n) - Eksponensial: Waktu eksekusi meningkat secara eksponensial dengan ukuran input. Contoh: solusi rekursif untuk masalah traveling salesman.</p></li>
+</ul>
+</section>
+<section id="hitung-big-o-dari-algoritma-sequantial-search">
+<h2>Hitung Big O dari Algoritma Sequantial Search<a class="headerlink" href="#hitung-big-o-dari-algoritma-sequantial-search" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>** Waktu kompleksitas **</p></li>
+<li><p>** Ruang Kompleksitas **</p></li>
+</ul>
+<section id="refrensi">
+<h3>Refrensi:<a class="headerlink" href="#refrensi" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>(Definisi Algoritma) Joseph Teguh Santoso. (2021). STRUKTUR DATA dan ALGORITMA (Bagian 1). Penerbit Yayasan Prima Agus Teknik, 7(1), 1-333. Retrieved from <a class="reference external" href="https://penerbit.stekom.ac.id/index.php/yayasanpat/article/view/288">https://penerbit.stekom.ac.id/index.php/yayasanpat/article/view/288</a></p></li>
+<li><p>(Algoritma Sequential Search) Mochamad Aminnur, Radja Susun Pakpahan, Dhamar Galih Alfarizi, Diski Apriana, Sutisna Mustika Rahmat, Ahmad Fauzi, &amp; Perani Rosyani. (2023). IMPLEMENTASI METODE SEQUENTIAL SEARCH UNTUK PENGELOLAAN DATA BARANG PADA SISTEM APLIKASI SIKILAT CARGO. LOGIC : Jurnal Ilmu Komputer Dan Pendidikan, 1(2), 283–287. Retrieved from <a class="reference external" href="https://www.journal.mediapublikasi.id/index.php/logic/article/view/1629">https://www.journal.mediapublikasi.id/index.php/logic/article/view/1629</a></p></li>
+<li><p>(Algoritma Binary Search) Achmad Nur Santoso, Adi Indera Dwi Anggara, Alfin Firman Syah, Luthfianti Wahyu Noerlillah, &amp; Wahyu Surya Alamsyah. (2018). Sistem Kontrol Perpustakaan Menggunakan Metode Binary Searching. SinarFe7, 1(1), 365–368. Retrieved from <a class="reference external" href="https://journal.fortei7.org/index.php/sinarFe7/article/view/203">https://journal.fortei7.org/index.php/sinarFe7/article/view/203</a></p></li>
+<li><p>Priambodo, Y. A., &amp; Prasetyo, S. Y. J. (2018). Pemetaan Penyebaran Guru di Provinsi Banten dengan Menggunakan Metode Spatial Clustering K-Means (Studi kasus : Wilayah Provinsi Banten). Indonesian Journal of Computing and Modeling, 1(1), 18–27. Retrieved from <a class="reference external" href="https://ejournal.uksw.edu/icm/article/view/1491">https://ejournal.uksw.edu/icm/article/view/1491</a></p></li>
+<li><p>(Big O algoritma)</p></li>
+<li><p>(Hitung Big O dari Algoritma Sequantial Search)</p></li>
+</ol>
+</section>
 </section>
 </section>
 
@@ -510,6 +486,24 @@ For example, here’s some sample Matplotlib code:</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="materiHimpunan.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">HIMPUNAN</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -526,9 +520,17 @@ For example, here’s some sample Matplotlib code:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-sequential-search">Algoritma Sequential Search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode-adalah">Pseudocode adalah…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algoritma-sequantial-search">Hitung Big O dari Algoritma Sequantial Search</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refrensi">Refrensi:</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
