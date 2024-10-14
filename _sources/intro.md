@@ -7,8 +7,9 @@ It does not go in-depth into any particular topic - check out [the Jupyter Book 
 
 Check out the content pages bundled with this sample book to see more.
 
-![image](img/utm.png)
-
+<center>
+<img src="img/logo.png"></img>
+</center>
 #### Biodata:
 * NAMA : Muhammad Fajar Nugroho
 * NIM : 240411100103
