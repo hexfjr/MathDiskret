@@ -10,6 +10,7 @@ Check out the content pages bundled with this sample book to see more.
 <center>
 <img src="img/logo.png"></img>
 </center>
+
 #### Biodata:
 * NAMA : Muhammad Fajar Nugroho
 * NIM : 240411100103
