@@ -7,9 +7,10 @@ It does not go in-depth into any particular topic - check out [the Jupyter Book 
 
 Check out the content pages bundled with this sample book to see more.
 
-<center>
-<img src="img/logo.png"></img>
-</center>
+<!-- <center> -->
+<!-- <img src="img/logo.png"></img> -->
+![image](./img/logo.png)
+<!-- </center> -->
 
 #### Biodata:
 * NAMA : Muhammad Fajar Nugroho
