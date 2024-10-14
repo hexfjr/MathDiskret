@@ -1,6 +1,6 @@
 # Aljabar Boolean & Gerbang Logika
 
-### Definisi aljabar boolean
+## Definisi aljabar boolean
 Aljabar   Boolean   adalah   aljabar   yang terdiri atas suatu himpunan   (paling sedikit terdiri dari dua elemen nol dan satu) dengan tiga operasi   yaitu AND, OR dan NOT yang terdefinisi  pada himpunan tersebut (Sutojo,2008).Seperti  ditujukkan  pada  persamaan (1) untuk  OR,  persamaan  (2)  untuk  AND dan persamaan (3) untuk NOT.
 
  $$ A + B =  F(1) $$
