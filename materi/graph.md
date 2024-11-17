@@ -68,3 +68,5 @@ Normalisasi degree centrality adalah
 ![image](https://hackmd.io/_uploads/HJ2BXuDz1e.png)
 
 ![image](https://hackmd.io/_uploads/HkU4XOvfJl.png)
+
+tes
