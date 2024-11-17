@@ -17,7 +17,7 @@ Jalankan perintah:
 # 
 > pip install ghp-import . -> skip perintah ini jika merasa sudah install
 > cd materi
-> ghp-import -n -p -f 
+> ghp-import -n -p -f _build/html 
 
 * NOTES:
 Setiap ada perubahan di file maupun _toc.yml wajib build ulang
