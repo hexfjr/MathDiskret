@@ -1,0 +1,30 @@
+# Setiap pengubahan materi
+* rules:
+Jangan lupa setiap file markdown wajib paling atas (#) sebagai judul dari materi. lalu bagian materinya. 
+- tambahkan file .md baru sesuai judul materi
+- tambahkan nama file md baru dibuat ditambahkan ke toc => materi/_toc.yml
+Jalankan perintah:
+> jupyter-book build materi
+
+
+# Push file perubahan ke github
+* bagian ini ga wajib hanya saran kalau data di codespace hilang, jaga jaga jadi bisa di upload ke repo.
+Jalankan perintah: 
+> git add .
+> git comit -m "materi"
+> git push
+
+# 
+> pip install ghp-import . -> skip perintah ini jika merasa sudah install
+> cd materi
+> ghp-import -n -p -f 
+
+* NOTES:
+Setiap ada perubahan di file maupun _toc.yml wajib build ulang
+
+If your book’s Table of Contents doesn’t update after changing the _toc.yml file, try:
+> jupyter-book build --all materi
+
+&Jika ada error sabar, kadang setiap orang beda beda errornya.
+
+Creator dokumentasi: @mfjrxn
