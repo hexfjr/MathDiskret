@@ -11,7 +11,7 @@ Jalankan perintah: (>)
 * bagian ini ga wajib hanya saran kalau data di codespace hilang, jaga jaga jadi bisa di upload ke repo.
 Jalankan perintah: (>) 
 > git add .
-> git comit -m "materi"
+> git commit -m "materi"
 > git push
 
 # Hasil build menjadi website online di github pages
