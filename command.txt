@@ -26,7 +26,7 @@ $ ghp-import -n -p -f _build/html
 Setiap ada perubahan di file maupun _toc.yml wajib build ulang
 
 If your book’s Table of Contents doesn’t update after changing the _toc.yml file, try:
-> jupyter-book build --all materi
+$ jupyter-book build --all materi
 
 &Jika ada error sabar, kadang setiap orang beda beda errornya.
 
