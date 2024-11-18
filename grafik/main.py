@@ -23,10 +23,11 @@ g.add_edge(2, 3)
 g.add_edge(2, 1)
 
 # nx.draw(g)
-nx.draw(g, with_labels = True)
 
 print("Degree centrality: ", nx.degree_centrality(g))
 print("Closeness centrality: ", nx.closeness_centrality(g))
 print("Beetweeness centrality: ", nx.betweenness_centrality(g))
+nx.draw(g, with_labels = True)
+
 # plt.savefig("filename.png")
 plt.show()
